@@ -1,0 +1,771 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E0241B431F0CAFA400051302 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E0241B421F0CAFA400051302 /* main.m */; };
+		E0241B461F0CAFA400051302 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E0241B451F0CAFA400051302 /* AppDelegate.m */; };
+		E0241B491F0CAFA400051302 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0241B481F0CAFA400051302 /* ViewController.m */; };
+		E0241B4C1F0CAFA400051302 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0241B4A1F0CAFA400051302 /* Main.storyboard */; };
+		E0241B4E1F0CAFA400051302 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0241B4D1F0CAFA400051302 /* Assets.xcassets */; };
+		E0241B511F0CAFA400051302 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0241B4F1F0CAFA400051302 /* LaunchScreen.storyboard */; };
+		E0241B5C1F0CAFA500051302 /* MyMusicPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0241B5B1F0CAFA500051302 /* MyMusicPlayerTests.m */; };
+		E0241B671F0CAFA500051302 /* MyMusicPlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0241B661F0CAFA500051302 /* MyMusicPlayerUITests.m */; };
+		E0241B901F0CB19900051302 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = E0241B781F0CB19900051302 /* MASCompositeConstraint.m */; };
+		E0241B911F0CB19900051302 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = E0241B7B1F0CB19900051302 /* MASConstraint.m */; };
+		E0241B921F0CB19900051302 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = E0241B7D1F0CB19900051302 /* MASConstraintMaker.m */; };
+		E0241B931F0CB19900051302 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = E0241B7F1F0CB19900051302 /* MASLayoutConstraint.m */; };
+		E0241B941F0CB19900051302 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = E0241B831F0CB19900051302 /* MASViewAttribute.m */; };
+		E0241B951F0CB19900051302 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = E0241B851F0CB19900051302 /* MASViewConstraint.m */; };
+		E0241B961F0CB19900051302 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E0241B871F0CB19900051302 /* NSArray+MASAdditions.m */; };
+		E0241B971F0CB19900051302 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E0241B8A1F0CB19900051302 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		E0241B981F0CB19900051302 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E0241B8C1F0CB19900051302 /* View+MASAdditions.m */; };
+		E0241B991F0CB19900051302 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E0241B8F1F0CB19900051302 /* ViewController+MASAdditions.m */; };
+		E0241B9C1F0CB3D800051302 /* Mark Ronson,Bruno Mars - Uptown Funk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E0241B9B1F0CB3D800051302 /* Mark Ronson,Bruno Mars - Uptown Funk.mp3 */; };
+		E0241B9E1F0CB4AC00051302 /* 薛之谦 - 我好像在哪见过你.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E0241B9D1F0CB4AC00051302 /* 薛之谦 - 我好像在哪见过你.mp3 */; };
+		E0241BA11F0CBBB600051302 /* AssetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E0241BA01F0CBBB600051302 /* AssetModel.m */; };
+		E024773E1F10ACD30094913B /* 我好像在哪见过你_歌词.lrc in Resources */ = {isa = PBXBuildFile; fileRef = E024773D1F10ACD30094913B /* 我好像在哪见过你_歌词.lrc */; };
+		E02477401F10AD6F0094913B /* Mark Ronson - Uptown Funk (feat. Bruno Mars).lrc in Resources */ = {isa = PBXBuildFile; fileRef = E024773F1F10AD6F0094913B /* Mark Ronson - Uptown Funk (feat. Bruno Mars).lrc */; };
+		E0279C111F0DD0680019565F /* MusicLrcScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E0279C101F0DD0680019565F /* MusicLrcScrollView.m */; };
+		E0279C141F0DD6E60019565F /* MusicLrcTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E0279C131F0DD6E60019565F /* MusicLrcTool.m */; };
+		E0279C181F0DDA060019565F /* MusicLrcModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E0279C171F0DDA060019565F /* MusicLrcModel.m */; };
+		E0A9F69E1F0D042300BA0F2E /* NSString+ZFMusicExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A9F69D1F0D042300BA0F2E /* NSString+ZFMusicExtension.m */; };
+		E0A9F6A11F0D0DE400BA0F2E /* CALayer+PauseAimate.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A9F6A01F0D0DE400BA0F2E /* CALayer+PauseAimate.m */; };
+		E0C0D6A81F0E1C9C00C41B30 /* ZFMusicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C0D6A71F0E1C9C00C41B30 /* ZFMusicCell.m */; };
+		E0C0D6AB1F0E1CDE00C41B30 /* ZFLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C0D6AA1F0E1CDE00C41B30 /* ZFLabel.m */; };
+		E0C0D6EF1F0FE54200C41B30 /* ZFMusic.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0C0D6EE1F0FE54200C41B30 /* ZFMusic.plist */; };
+		E0C0D6F21F0FE68300C41B30 /* ZFMusicPlistModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C0D6F11F0FE68300C41B30 /* ZFMusicPlistModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E0241B581F0CAFA500051302 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0241B361F0CAFA400051302 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0241B3D1F0CAFA400051302;
+			remoteInfo = MyMusicPlayer;
+		};
+		E0241B631F0CAFA500051302 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0241B361F0CAFA400051302 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0241B3D1F0CAFA400051302;
+			remoteInfo = MyMusicPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E0241B3E1F0CAFA400051302 /* MyMusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0241B421F0CAFA400051302 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E0241B441F0CAFA400051302 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E0241B451F0CAFA400051302 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E0241B471F0CAFA400051302 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E0241B481F0CAFA400051302 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E0241B4B1F0CAFA400051302 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E0241B4D1F0CAFA400051302 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E0241B501F0CAFA400051302 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E0241B521F0CAFA400051302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0241B571F0CAFA500051302 /* MyMusicPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyMusicPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0241B5B1F0CAFA500051302 /* MyMusicPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyMusicPlayerTests.m; sourceTree = "<group>"; };
+		E0241B5D1F0CAFA500051302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0241B621F0CAFA500051302 /* MyMusicPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyMusicPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0241B661F0CAFA500051302 /* MyMusicPlayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyMusicPlayerUITests.m; sourceTree = "<group>"; };
+		E0241B681F0CAFA500051302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0241B741F0CB02700051302 /* MyPrefix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyPrefix.h; sourceTree = "<group>"; };
+		E0241B771F0CB19900051302 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		E0241B781F0CB19900051302 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		E0241B791F0CB19900051302 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		E0241B7A1F0CB19900051302 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		E0241B7B1F0CB19900051302 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		E0241B7C1F0CB19900051302 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		E0241B7D1F0CB19900051302 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		E0241B7E1F0CB19900051302 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		E0241B7F1F0CB19900051302 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		E0241B801F0CB19900051302 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		E0241B811F0CB19900051302 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		E0241B821F0CB19900051302 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		E0241B831F0CB19900051302 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		E0241B841F0CB19900051302 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		E0241B851F0CB19900051302 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		E0241B861F0CB19900051302 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		E0241B871F0CB19900051302 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		E0241B881F0CB19900051302 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		E0241B891F0CB19900051302 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		E0241B8A1F0CB19900051302 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		E0241B8B1F0CB19900051302 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		E0241B8C1F0CB19900051302 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		E0241B8D1F0CB19900051302 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		E0241B8E1F0CB19900051302 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		E0241B8F1F0CB19900051302 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		E0241B9B1F0CB3D800051302 /* Mark Ronson,Bruno Mars - Uptown Funk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mark Ronson,Bruno Mars - Uptown Funk.mp3"; sourceTree = "<group>"; };
+		E0241B9D1F0CB4AC00051302 /* 薛之谦 - 我好像在哪见过你.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "薛之谦 - 我好像在哪见过你.mp3"; sourceTree = "<group>"; };
+		E0241B9F1F0CBBB600051302 /* AssetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetModel.h; sourceTree = "<group>"; };
+		E0241BA01F0CBBB600051302 /* AssetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetModel.m; sourceTree = "<group>"; };
+		E024773D1F10ACD30094913B /* 我好像在哪见过你_歌词.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "我好像在哪见过你_歌词.lrc"; sourceTree = "<group>"; };
+		E024773F1F10AD6F0094913B /* Mark Ronson - Uptown Funk (feat. Bruno Mars).lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Mark Ronson - Uptown Funk (feat. Bruno Mars).lrc"; sourceTree = "<group>"; };
+		E0279C0F1F0DD0680019565F /* MusicLrcScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicLrcScrollView.h; sourceTree = "<group>"; };
+		E0279C101F0DD0680019565F /* MusicLrcScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicLrcScrollView.m; sourceTree = "<group>"; };
+		E0279C121F0DD6E60019565F /* MusicLrcTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicLrcTool.h; sourceTree = "<group>"; };
+		E0279C131F0DD6E60019565F /* MusicLrcTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicLrcTool.m; sourceTree = "<group>"; };
+		E0279C161F0DDA060019565F /* MusicLrcModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicLrcModel.h; sourceTree = "<group>"; };
+		E0279C171F0DDA060019565F /* MusicLrcModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicLrcModel.m; sourceTree = "<group>"; };
+		E0A9F69C1F0D042300BA0F2E /* NSString+ZFMusicExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ZFMusicExtension.h"; sourceTree = "<group>"; };
+		E0A9F69D1F0D042300BA0F2E /* NSString+ZFMusicExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZFMusicExtension.m"; sourceTree = "<group>"; };
+		E0A9F69F1F0D0DE400BA0F2E /* CALayer+PauseAimate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+PauseAimate.h"; sourceTree = "<group>"; };
+		E0A9F6A01F0D0DE400BA0F2E /* CALayer+PauseAimate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+PauseAimate.m"; sourceTree = "<group>"; };
+		E0C0D6A61F0E1C9C00C41B30 /* ZFMusicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFMusicCell.h; sourceTree = "<group>"; };
+		E0C0D6A71F0E1C9C00C41B30 /* ZFMusicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFMusicCell.m; sourceTree = "<group>"; };
+		E0C0D6A91F0E1CDE00C41B30 /* ZFLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFLabel.h; sourceTree = "<group>"; };
+		E0C0D6AA1F0E1CDE00C41B30 /* ZFLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFLabel.m; sourceTree = "<group>"; };
+		E0C0D6EE1F0FE54200C41B30 /* ZFMusic.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ZFMusic.plist; sourceTree = "<group>"; };
+		E0C0D6F01F0FE68300C41B30 /* ZFMusicPlistModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFMusicPlistModel.h; sourceTree = "<group>"; };
+		E0C0D6F11F0FE68300C41B30 /* ZFMusicPlistModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFMusicPlistModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E0241B3B1F0CAFA400051302 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0241B541F0CAFA500051302 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0241B5F1F0CAFA500051302 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E0241B351F0CAFA400051302 = {
+			isa = PBXGroup;
+			children = (
+				E0241B401F0CAFA400051302 /* MyMusicPlayer */,
+				E0241B5A1F0CAFA500051302 /* MyMusicPlayerTests */,
+				E0241B651F0CAFA500051302 /* MyMusicPlayerUITests */,
+				E0241B3F1F0CAFA400051302 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E0241B3F1F0CAFA400051302 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E0241B3E1F0CAFA400051302 /* MyMusicPlayer.app */,
+				E0241B571F0CAFA500051302 /* MyMusicPlayerTests.xctest */,
+				E0241B621F0CAFA500051302 /* MyMusicPlayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E0241B401F0CAFA400051302 /* MyMusicPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				E0279C151F0DD6EC0019565F /* Tool */,
+				E0A9F69B1F0D03E500BA0F2E /* Category */,
+				E0A9F69A1F0CC8A600BA0F2E /* Other */,
+				E0A9F6991F0CC88800BA0F2E /* View */,
+				E0A9F6981F0CC88000BA0F2E /* Controller */,
+				E0A9F6971F0CC87A00BA0F2E /* Model */,
+				E0241B9A1F0CB3C100051302 /* Resources */,
+				E0241B751F0CB18B00051302 /* Lib */,
+				E0241B411F0CAFA400051302 /* Supporting Files */,
+			);
+			path = MyMusicPlayer;
+			sourceTree = "<group>";
+		};
+		E0241B411F0CAFA400051302 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E0241B421F0CAFA400051302 /* main.m */,
+				E0241B741F0CB02700051302 /* MyPrefix.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E0241B5A1F0CAFA500051302 /* MyMusicPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				E0241B5B1F0CAFA500051302 /* MyMusicPlayerTests.m */,
+				E0241B5D1F0CAFA500051302 /* Info.plist */,
+			);
+			path = MyMusicPlayerTests;
+			sourceTree = "<group>";
+		};
+		E0241B651F0CAFA500051302 /* MyMusicPlayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E0241B661F0CAFA500051302 /* MyMusicPlayerUITests.m */,
+				E0241B681F0CAFA500051302 /* Info.plist */,
+			);
+			path = MyMusicPlayerUITests;
+			sourceTree = "<group>";
+		};
+		E0241B751F0CB18B00051302 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				E0241B761F0CB19900051302 /* Masonry */,
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
+		E0241B761F0CB19900051302 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				E0241B771F0CB19900051302 /* MASCompositeConstraint.h */,
+				E0241B781F0CB19900051302 /* MASCompositeConstraint.m */,
+				E0241B791F0CB19900051302 /* MASConstraint+Private.h */,
+				E0241B7A1F0CB19900051302 /* MASConstraint.h */,
+				E0241B7B1F0CB19900051302 /* MASConstraint.m */,
+				E0241B7C1F0CB19900051302 /* MASConstraintMaker.h */,
+				E0241B7D1F0CB19900051302 /* MASConstraintMaker.m */,
+				E0241B7E1F0CB19900051302 /* MASLayoutConstraint.h */,
+				E0241B7F1F0CB19900051302 /* MASLayoutConstraint.m */,
+				E0241B801F0CB19900051302 /* Masonry.h */,
+				E0241B811F0CB19900051302 /* MASUtilities.h */,
+				E0241B821F0CB19900051302 /* MASViewAttribute.h */,
+				E0241B831F0CB19900051302 /* MASViewAttribute.m */,
+				E0241B841F0CB19900051302 /* MASViewConstraint.h */,
+				E0241B851F0CB19900051302 /* MASViewConstraint.m */,
+				E0241B861F0CB19900051302 /* NSArray+MASAdditions.h */,
+				E0241B871F0CB19900051302 /* NSArray+MASAdditions.m */,
+				E0241B881F0CB19900051302 /* NSArray+MASShorthandAdditions.h */,
+				E0241B891F0CB19900051302 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				E0241B8A1F0CB19900051302 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				E0241B8B1F0CB19900051302 /* View+MASAdditions.h */,
+				E0241B8C1F0CB19900051302 /* View+MASAdditions.m */,
+				E0241B8D1F0CB19900051302 /* View+MASShorthandAdditions.h */,
+				E0241B8E1F0CB19900051302 /* ViewController+MASAdditions.h */,
+				E0241B8F1F0CB19900051302 /* ViewController+MASAdditions.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		E0241B9A1F0CB3C100051302 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E0279C0C1F0DC96B0019565F /* Lrcs */,
+				E0279C0B1F0DC9630019565F /* songs */,
+				E0C0D6EE1F0FE54200C41B30 /* ZFMusic.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E0279C0B1F0DC9630019565F /* songs */ = {
+			isa = PBXGroup;
+			children = (
+				E0241B9D1F0CB4AC00051302 /* 薛之谦 - 我好像在哪见过你.mp3 */,
+				E0241B9B1F0CB3D800051302 /* Mark Ronson,Bruno Mars - Uptown Funk.mp3 */,
+			);
+			name = songs;
+			sourceTree = "<group>";
+		};
+		E0279C0C1F0DC96B0019565F /* Lrcs */ = {
+			isa = PBXGroup;
+			children = (
+				E024773F1F10AD6F0094913B /* Mark Ronson - Uptown Funk (feat. Bruno Mars).lrc */,
+				E024773D1F10ACD30094913B /* 我好像在哪见过你_歌词.lrc */,
+			);
+			name = Lrcs;
+			sourceTree = "<group>";
+		};
+		E0279C151F0DD6EC0019565F /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				E0279C121F0DD6E60019565F /* MusicLrcTool.h */,
+				E0279C131F0DD6E60019565F /* MusicLrcTool.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		E0A9F6971F0CC87A00BA0F2E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E0241B9F1F0CBBB600051302 /* AssetModel.h */,
+				E0241BA01F0CBBB600051302 /* AssetModel.m */,
+				E0279C161F0DDA060019565F /* MusicLrcModel.h */,
+				E0279C171F0DDA060019565F /* MusicLrcModel.m */,
+				E0C0D6F01F0FE68300C41B30 /* ZFMusicPlistModel.h */,
+				E0C0D6F11F0FE68300C41B30 /* ZFMusicPlistModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E0A9F6981F0CC88000BA0F2E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E0241B471F0CAFA400051302 /* ViewController.h */,
+				E0241B481F0CAFA400051302 /* ViewController.m */,
+				E0241B4A1F0CAFA400051302 /* Main.storyboard */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E0A9F6991F0CC88800BA0F2E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E0279C0F1F0DD0680019565F /* MusicLrcScrollView.h */,
+				E0279C101F0DD0680019565F /* MusicLrcScrollView.m */,
+				E0C0D6A61F0E1C9C00C41B30 /* ZFMusicCell.h */,
+				E0C0D6A71F0E1C9C00C41B30 /* ZFMusicCell.m */,
+				E0C0D6A91F0E1CDE00C41B30 /* ZFLabel.h */,
+				E0C0D6AA1F0E1CDE00C41B30 /* ZFLabel.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E0A9F69A1F0CC8A600BA0F2E /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				E0241B441F0CAFA400051302 /* AppDelegate.h */,
+				E0241B451F0CAFA400051302 /* AppDelegate.m */,
+				E0241B4D1F0CAFA400051302 /* Assets.xcassets */,
+				E0241B4F1F0CAFA400051302 /* LaunchScreen.storyboard */,
+				E0241B521F0CAFA400051302 /* Info.plist */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		E0A9F69B1F0D03E500BA0F2E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				E0A9F69C1F0D042300BA0F2E /* NSString+ZFMusicExtension.h */,
+				E0A9F69D1F0D042300BA0F2E /* NSString+ZFMusicExtension.m */,
+				E0A9F69F1F0D0DE400BA0F2E /* CALayer+PauseAimate.h */,
+				E0A9F6A01F0D0DE400BA0F2E /* CALayer+PauseAimate.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E0241B3D1F0CAFA400051302 /* MyMusicPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0241B6B1F0CAFA500051302 /* Build configuration list for PBXNativeTarget "MyMusicPlayer" */;
+			buildPhases = (
+				E0241B3A1F0CAFA400051302 /* Sources */,
+				E0241B3B1F0CAFA400051302 /* Frameworks */,
+				E0241B3C1F0CAFA400051302 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyMusicPlayer;
+			productName = MyMusicPlayer;
+			productReference = E0241B3E1F0CAFA400051302 /* MyMusicPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E0241B561F0CAFA500051302 /* MyMusicPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0241B6E1F0CAFA500051302 /* Build configuration list for PBXNativeTarget "MyMusicPlayerTests" */;
+			buildPhases = (
+				E0241B531F0CAFA500051302 /* Sources */,
+				E0241B541F0CAFA500051302 /* Frameworks */,
+				E0241B551F0CAFA500051302 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0241B591F0CAFA500051302 /* PBXTargetDependency */,
+			);
+			name = MyMusicPlayerTests;
+			productName = MyMusicPlayerTests;
+			productReference = E0241B571F0CAFA500051302 /* MyMusicPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E0241B611F0CAFA500051302 /* MyMusicPlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0241B711F0CAFA500051302 /* Build configuration list for PBXNativeTarget "MyMusicPlayerUITests" */;
+			buildPhases = (
+				E0241B5E1F0CAFA500051302 /* Sources */,
+				E0241B5F1F0CAFA500051302 /* Frameworks */,
+				E0241B601F0CAFA500051302 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0241B641F0CAFA500051302 /* PBXTargetDependency */,
+			);
+			name = MyMusicPlayerUITests;
+			productName = MyMusicPlayerUITests;
+			productReference = E0241B621F0CAFA500051302 /* MyMusicPlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E0241B361F0CAFA400051302 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = HuangZhenFeng;
+				TargetAttributes = {
+					E0241B3D1F0CAFA400051302 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					E0241B561F0CAFA500051302 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E0241B3D1F0CAFA400051302;
+					};
+					E0241B611F0CAFA500051302 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E0241B3D1F0CAFA400051302;
+					};
+				};
+			};
+			buildConfigurationList = E0241B391F0CAFA400051302 /* Build configuration list for PBXProject "MyMusicPlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E0241B351F0CAFA400051302;
+			productRefGroup = E0241B3F1F0CAFA400051302 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E0241B3D1F0CAFA400051302 /* MyMusicPlayer */,
+				E0241B561F0CAFA500051302 /* MyMusicPlayerTests */,
+				E0241B611F0CAFA500051302 /* MyMusicPlayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E0241B3C1F0CAFA400051302 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0241B511F0CAFA400051302 /* LaunchScreen.storyboard in Resources */,
+				E0241B4E1F0CAFA400051302 /* Assets.xcassets in Resources */,
+				E0241B4C1F0CAFA400051302 /* Main.storyboard in Resources */,
+				E024773E1F10ACD30094913B /* 我好像在哪见过你_歌词.lrc in Resources */,
+				E0C0D6EF1F0FE54200C41B30 /* ZFMusic.plist in Resources */,
+				E0241B9C1F0CB3D800051302 /* Mark Ronson,Bruno Mars - Uptown Funk.mp3 in Resources */,
+				E0241B9E1F0CB4AC00051302 /* 薛之谦 - 我好像在哪见过你.mp3 in Resources */,
+				E02477401F10AD6F0094913B /* Mark Ronson - Uptown Funk (feat. Bruno Mars).lrc in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0241B551F0CAFA500051302 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0241B601F0CAFA500051302 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E0241B3A1F0CAFA400051302 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0279C181F0DDA060019565F /* MusicLrcModel.m in Sources */,
+				E0C0D6A81F0E1C9C00C41B30 /* ZFMusicCell.m in Sources */,
+				E0241B971F0CB19900051302 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				E0241B951F0CB19900051302 /* MASViewConstraint.m in Sources */,
+				E0241B901F0CB19900051302 /* MASCompositeConstraint.m in Sources */,
+				E0241B961F0CB19900051302 /* NSArray+MASAdditions.m in Sources */,
+				E0241B491F0CAFA400051302 /* ViewController.m in Sources */,
+				E0241B461F0CAFA400051302 /* AppDelegate.m in Sources */,
+				E0241B931F0CB19900051302 /* MASLayoutConstraint.m in Sources */,
+				E0C0D6AB1F0E1CDE00C41B30 /* ZFLabel.m in Sources */,
+				E0C0D6F21F0FE68300C41B30 /* ZFMusicPlistModel.m in Sources */,
+				E0241B431F0CAFA400051302 /* main.m in Sources */,
+				E0241B991F0CB19900051302 /* ViewController+MASAdditions.m in Sources */,
+				E0A9F69E1F0D042300BA0F2E /* NSString+ZFMusicExtension.m in Sources */,
+				E0241B981F0CB19900051302 /* View+MASAdditions.m in Sources */,
+				E0A9F6A11F0D0DE400BA0F2E /* CALayer+PauseAimate.m in Sources */,
+				E0241BA11F0CBBB600051302 /* AssetModel.m in Sources */,
+				E0279C141F0DD6E60019565F /* MusicLrcTool.m in Sources */,
+				E0279C111F0DD0680019565F /* MusicLrcScrollView.m in Sources */,
+				E0241B941F0CB19900051302 /* MASViewAttribute.m in Sources */,
+				E0241B911F0CB19900051302 /* MASConstraint.m in Sources */,
+				E0241B921F0CB19900051302 /* MASConstraintMaker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0241B531F0CAFA500051302 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0241B5C1F0CAFA500051302 /* MyMusicPlayerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0241B5E1F0CAFA500051302 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0241B671F0CAFA500051302 /* MyMusicPlayerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E0241B591F0CAFA500051302 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0241B3D1F0CAFA400051302 /* MyMusicPlayer */;
+			targetProxy = E0241B581F0CAFA500051302 /* PBXContainerItemProxy */;
+		};
+		E0241B641F0CAFA500051302 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0241B3D1F0CAFA400051302 /* MyMusicPlayer */;
+			targetProxy = E0241B631F0CAFA500051302 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E0241B4A1F0CAFA400051302 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0241B4B1F0CAFA400051302 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E0241B4F1F0CAFA400051302 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0241B501F0CAFA400051302 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E0241B691F0CAFA500051302 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E0241B6A1F0CAFA500051302 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E0241B6C1F0CAFA500051302 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/MyPrefix.h";
+				INFOPLIST_FILE = MyMusicPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HZhenF.MyMusicPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E0241B6D1F0CAFA500051302 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/MyPrefix.h";
+				INFOPLIST_FILE = MyMusicPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HZhenF.MyMusicPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E0241B6F1F0CAFA500051302 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MyMusicPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HZhenF.MyMusicPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyMusicPlayer.app/MyMusicPlayer";
+			};
+			name = Debug;
+		};
+		E0241B701F0CAFA500051302 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MyMusicPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HZhenF.MyMusicPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyMusicPlayer.app/MyMusicPlayer";
+			};
+			name = Release;
+		};
+		E0241B721F0CAFA500051302 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MyMusicPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HZhenF.MyMusicPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MyMusicPlayer;
+			};
+			name = Debug;
+		};
+		E0241B731F0CAFA500051302 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MyMusicPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HZhenF.MyMusicPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MyMusicPlayer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E0241B391F0CAFA400051302 /* Build configuration list for PBXProject "MyMusicPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0241B691F0CAFA500051302 /* Debug */,
+				E0241B6A1F0CAFA500051302 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0241B6B1F0CAFA500051302 /* Build configuration list for PBXNativeTarget "MyMusicPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0241B6C1F0CAFA500051302 /* Debug */,
+				E0241B6D1F0CAFA500051302 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0241B6E1F0CAFA500051302 /* Build configuration list for PBXNativeTarget "MyMusicPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0241B6F1F0CAFA500051302 /* Debug */,
+				E0241B701F0CAFA500051302 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0241B711F0CAFA500051302 /* Build configuration list for PBXNativeTarget "MyMusicPlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0241B721F0CAFA500051302 /* Debug */,
+				E0241B731F0CAFA500051302 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E0241B361F0CAFA400051302 /* Project object */;
+}
